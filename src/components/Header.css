@@ -1,0 +1,29 @@
+/* Header.css */
+.header-menu {
+  display: flex !important;
+  align-items: center !important;
+  background-color: #b1b5b5; /* 设置导航栏背景颜色为浅灰色 */
+  padding: 10px; /* 增加填充以确保内容不紧贴边缘 */
+  width: 100%; /* 确保 header 占满整个宽度 */
+  box-sizing: border-box; /* 包括填充和边框在内的总宽度 */
+}
+
+.header-item {
+  flex-grow: 1; /* 使每个菜单项具有相同的增长空间，确保平衡布局 */
+}
+
+.header-menu-right {
+  display: flex !important;
+  align-items: center !important; /* 确保右侧菜单项垂直居中 */
+}
+
+.header-item .ui.button {
+  margin-left: 10px; /* 增加按钮之间的间距 */
+
+}
+
+
+/* 为搜索栏设置宽度 */
+.header-item .ui.input input {
+  width: 400px; /* 设置搜索栏的宽度 */
+}
