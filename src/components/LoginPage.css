@@ -21,7 +21,12 @@
   justify-content: flex-end; 
   margin-bottom: 10px; 
 }
-
+.signout-link {
+  display: flex;
+  justify-content: flex-start; /* 确保 Sign Out 按钮靠左对齐 */
+  align-items: center;
+  flex: 1; /* 允许 Sign Out 链接占据足够空间 */
+}
 .signup-link {
   margin: 0; 
 }
@@ -62,6 +67,8 @@
   font-weight: bold; /* 设置按钮字体加粗 */
   border: 2px solid white; /* 设置按钮边框颜色为白色，边框宽度为2px */
 }
+
+.signout-button,
 .sign-button {
  
   color: #007bff; /* 设置按钮文字颜色为白色 */
