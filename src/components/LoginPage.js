@@ -11,24 +11,24 @@ const LoginPage = () => {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
-  // 处理登录功能
+  // Process the sign in function
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate('/'); // 登录成功后导航到主页
+      navigate('/'); 
       alert('Successfully logged in');
     } catch (err) {
       setError('Invalid email or password.');
     }
   };
 
-  // 处理注销功能
+  // Process the sign out function
   const handleLogout = async () => {
     try {
-      await signOut(auth); // 使用 Firebase 的 signOut 进行注销
+      await signOut(auth); 
       alert('You have been signed out');
-      navigate('/login'); // 注销后重定向到登录页面
+      navigate('/login'); 
     } catch (err) {
       console.error('Error signing out:', err);
     }
@@ -38,7 +38,7 @@ const LoginPage = () => {
     <div className="login-page">
       <div className="login-form-container">
         <div className="header">
-        {/* 显示 "Sign Out" 按钮，如果用户已登录 */}
+        {/* Displays the "Sign Out" button if the user is logged in */}
         {auth.currentUser && (
           <div className="signout-link">
             <Button primary className="signout-button" onClick={handleLogout}>
@@ -65,7 +65,7 @@ const LoginPage = () => {
           <Button primary className="login-button" type="submit">Login</Button>
         </Form>
 
-        {/* 添加注销按钮 */}
+        
         
       </div>
     </div>
