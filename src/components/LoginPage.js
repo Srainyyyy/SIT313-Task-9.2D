@@ -38,11 +38,14 @@ const LoginPage = () => {
     <div className="login-page">
       <div className="login-form-container">
         <div className="header">
-        <div className="signout-link">
-          <Button primary className="signout-button" onClick={handleLogout}>
-            Sign Out
-          </Button>
+        {/* 显示 "Sign Out" 按钮，如果用户已登录 */}
+        {auth.currentUser && (
+          <div className="signout-link">
+            <Button primary className="signout-button" onClick={handleLogout}>
+              Sign Out
+            </Button>
           </div>
+        )}
           <div className="signup-link">
             <Button className="sign-button" secondary onClick={() => navigate('/signup')}>
               Sign Up
