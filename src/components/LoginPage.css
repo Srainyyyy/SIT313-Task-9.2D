@@ -6,6 +6,19 @@
   background-color: #f4f4f4;
 }
 
+.premium-form-container{
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+
+.checkout-form-container,
+.plans-form-container,
 .login-form-container {
   position: relative;
   background: white;
@@ -57,6 +70,12 @@
   color: red;
 }
 
+.re-pur-button,
+.re-plan-button,
+.try-free-button,
+.pay-button,
+.prem-button,
+.free-button,
 .login-button {
   width: 95%; 
   background-color: #007bff; /* 设置按钮背景色为蓝色 */
@@ -80,3 +99,21 @@
    border: 2px solid #007bff; /* 设置按钮边框颜色为白色，边框宽度为2px */
 }
  
+.form-title {
+  color: blue;
+  text-align: center;
+  margin-bottom: 20px; 
+  font-size: 24px; 
+  font-weight: bold; 
+}
+
+
+.banner-input {
+  width: 750px; 
+  max-width: 500;
+  height: 40px; 
+  padding: 10px; 
+  font-size: 16px; 
+  border: 1px solid #ccc; 
+  box-sizing: border-box; 
+}

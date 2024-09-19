@@ -14,6 +14,9 @@ const Header = () => (
         <Button as={Link} to="/post">Post</Button> 
       </Menu.Item>
       <Menu.Item className='header-item'>
+        <Button primary as={Link} to="/plans">Plans</Button> 
+      </Menu.Item>
+      <Menu.Item className='header-item'>
         <Button primary as={Link} to="/login">Login</Button> 
       </Menu.Item>
     </Menu.Menu>
